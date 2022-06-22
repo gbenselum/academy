@@ -1,0 +1,11 @@
+[all:vars]
+ansible_user=devops
+ansible_python_interpreter=/usr/bin/python
+
+[local]
+ansible-engine ansible_connection=local
+
+[nodes]
+node2 ansible_host=35.175.137.161
+node3 ansible_host=54.173.247.92
+node1 ansible_host=3.84.91.180
