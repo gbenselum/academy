@@ -1,0 +1,7 @@
+---
+- name: This is a variable example
+  hosts: all
+  tasks:
+    - name: print variable
+      debug:
+        msg:  "my system ip adress is {{ ansible_default_ipv4.address }}"
